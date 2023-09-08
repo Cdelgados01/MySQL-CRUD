@@ -20,16 +20,16 @@ public class Usuario implements Serializable {
     private String nombre;
     private String apellido;
     @Temporal(TemporalType.DATE)
-    private Date fechaNac;
+    private Date fechaReg;
 
     public Usuario() {
     }
 
-    public Usuario(int id, String nombre, String apellido, Date fechaNac) {
+    public Usuario(int id, String nombre, String apellido, Date fechaReg) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.fechaNac = fechaNac;
+        this.fechaReg = fechaReg;
     }
 
     public int getId() {
@@ -56,12 +56,12 @@ public class Usuario implements Serializable {
         this.apellido = apellido;
     }
 
-    public Date getFechaNac() {
-        return fechaNac;
+    public Date getFechaReg() {
+        return fechaReg;
     }
 
-    public void setFechaNac(Date fechaNac) {
-        this.fechaNac = fechaNac;
+    public void setFechaReg(Date fechaReg) {
+        this.fechaReg = fechaReg;
     }
     
     
